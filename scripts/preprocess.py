@@ -27,6 +27,7 @@ CUSTOM_ADMONITION_STYLES = {
     "remark": "tip",
     "rule": "tip",
     "rules" : "tip",
+    "footnote": "note",
 }
 
 def safe_hyphenate(string):
