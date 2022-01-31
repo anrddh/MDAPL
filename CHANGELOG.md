@@ -7,6 +7,28 @@ In the first instance, it lists the changes between consecutive releases of this
 However, because this book is a rework of the first edition by Bernard Legrand,
 this changelog also marks with [n] content that is new in this rework.
 
+## v0.5
+
+  - Add chapter “Operators”:
+    - prefer “operand(s)” to “argument(s)” when talking about operators (the book seldom uses “operands”);
+    - merge tables listing functions that accept axis (the two tables right before the section “Scan” were joined for brevity);
+    - refactor section on “Outer Product”:
+      - remove sub-subsection “Applications” > “Dispatching Items into Categories” (obsolete with the introduction of interval index, dyadic `⍸`);
+      - [n] add sub-subsection “Applications” > “Exhaustive Search” (because outer product combines all items of both arguments, it is often useful when doing any kind of exhaustive search);
+      - change data for the exercise (instead of using large variables previously available in the accompanying workspace, define data large enough to cover all cases, but otherwise small);
+    - refactor section on “Inner Product”:
+      - include inner product explanatory diagrams as figures (there is no good way of including the explanatory diagrams as markdown tables or MathJax tables);
+      - remove obsolete example about `∧.=` (a long example showing how to use `∧.=` became obsolete with the extension of dyadic `⍳` to higher-rank arrays. Instead, this example was moved to the exercises);
+      
+    - refactor exercises:
+      - [n] add exercise about `∧.=` where we try to implement dyadic `⍳` on matrices with inner products, scans, and reductions;
+ 
+  - Add custom admonition `footnote` to preprocessing script (styled as a `note`, used for footnotes in the original text).
+  - Perform a stylistic change to a note in the operators appendix (footnotes, often marked with an asterisk `*` in the original book, are being marked with asterisks and then written out with an admonition called a `footnote`).
+  - Refactor “Variables” appendix:
+    - explicitly order variables by their first appearance;
+    - add cross-references to usage locations;
+
 ## v0.4
 
   - Add chapter “Nested Arrays (Continued)”:
